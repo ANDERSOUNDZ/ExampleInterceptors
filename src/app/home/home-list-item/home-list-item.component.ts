@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-home-list-item',
@@ -9,9 +9,15 @@ export class HomeListItemComponent implements OnInit {
 
   @Input() itemSelecion : string;
 
+  @Output() outSelecion = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  outItem(){
+    this.outSelecion.emit(this.itemSelecion);
   }
 
 }

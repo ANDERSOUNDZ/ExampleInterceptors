@@ -9,8 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeListItemComponent } from './home/home-list-item/home-list-item.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
-import { InterceptorComponent } from './home/interceptor/interceptor.component';
+
+import { ResponceHomeComponent } from './home/responce-home/responce-home.component';
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { InterceptorComponent } from './home/interceptor/interceptor.component';
     AppComponent,
     HomeComponent,
     HomeListItemComponent,
-    InterceptorComponent    
+    ResponceHomeComponent    
   ],
   imports: [
     BrowserModule,
@@ -26,12 +26,7 @@ import { InterceptorComponent } from './home/interceptor/interceptor.component';
     BrowserAnimationsModule,
     MaterialsModule,
     FlexLayoutModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
